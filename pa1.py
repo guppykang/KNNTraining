@@ -152,6 +152,8 @@ validationOriginal.append([fiveValidationOriginal, 5])
 validationOriginal.append([nineValidationOriginal, 9]) 
 validationOriginal.append([fifteenValidationOriginal, 15])
 originalMin = min(validationOriginal)
+print('lowest error' + str(originalMin))
+
 
 testErrorOriginal = runKnn(originalMin[1], testSet, trainingSet, testSetLabel, trainingSetLabel)
 
@@ -187,5 +189,6 @@ validationProjected.append([nineValidationProjected, 9])
 validationProjected.append([fifteenValidationProjected, 15])
 
 projectedMin = min(validationProjected)
+print('lowest error' + str(projectedMin))
 
 testErrorProjected = runKnn(projectedMin[1], newTestSet, trainingSet, testSetLabel, trainingSetLabel)
